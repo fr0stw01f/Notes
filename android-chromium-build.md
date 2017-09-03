@@ -4,11 +4,13 @@
 1. Confirm git and python are installed. git 2.2.1+ recommended. python 2.7+ recommended.
 
 2. Fetch depot_tools:
+
 ```sh
 $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ```
 
 3. Add depot_tools to your PATH:
+
 ```sh
 $ export PATH=`pwd`/depot_tools:"$PATH"
 ```
