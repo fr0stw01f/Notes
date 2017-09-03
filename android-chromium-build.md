@@ -63,6 +63,7 @@ enable_incremental_javac = true  # Much faster; experimental, need to remove if 
 ~/chromium/src$ build/install-build-deps-android.sh 
 ~/chromium/src$ . build/android/envsetup.sh
 ```
+
 ## Build
 
 * Build Chrome (chrome/BUILD.gn)
