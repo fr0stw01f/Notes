@@ -99,6 +99,18 @@ $ git add <filename>
 $ git diff <source_branch> <target_branch>
 ```
 
+* Prefer theirs(ours) when merging to avoid conflict
+
+```
+git pull -X theirs(ours)
+```
+
+* Accept theirs(ours) if already in conflicted state
+
+```
+git checkout --theirs(ours) path/to/file
+```
+
 ## Branching model
 
 ![alt text](http://nvie.com/img/git-model@2x.png "Branching model")
