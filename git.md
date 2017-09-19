@@ -108,7 +108,52 @@ git pull -X theirs(ours)
 * Accept theirs(ours) if already in conflicted state
 
 ```
-git checkout --theirs(ours) path/to/file
+git checkout --theirs(ours) <path/to/file>
+```
+
+* Discard changes on staged files
+
+```
+git checkout -- <path/to/file>
+```
+
+### Stash
+
+Stash the changes in a dirty working directory away
+
+* Move changes in current branch to another branch
+
+```
+git stash
+git checkout <branch_name>
+git stash pop
+```
+
+* Move changes in current branch to a new branch
+
+```
+git stash
+git stash branch <branchname> [<stash>]
+```
+
+Its effect is the same as the effect of:
+
+```
+git stash
+git checkout -b xxx
+git stash pop
+```
+* Interrupted workflow
+
+When you are in the middle of something, your boss comes in and demands that you fix something immediately.
+
+```
+... hack hack hack ...
+git stash
+edit emergency fix
+git commit -a -m "Fix in a hurry"
+git stash pop
+... continue hacking ...
 ```
 
 ## Branching model
