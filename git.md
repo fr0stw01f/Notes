@@ -80,9 +80,11 @@ $ git pull #in your working directory
 * Merge another branch into active branch (e.g. master)
 
 ```
-$ git merge [--no-ff] <branch_name>
+$ git merge [--no-ff] [-X <strategy-option>] <branch_name>
 ```
 > The --no-ff flag avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature.
+
+> The -X option specifies merge strategy, including theirs and ours. Use "theirs" when trying to updata the current branch to a newer version or tag.
 
 > In both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. 
 
