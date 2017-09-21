@@ -11,7 +11,7 @@ $ git add <filename>
 $ git add *
 ```
 
-This is the first step in the basic git workflow. 
+This is the first step in the basic git workflow.
 
 * To actually commit these changes use
 
@@ -32,6 +32,12 @@ $ git commit -a -m "Commit message"
 
 ```
 $ git mv <old_filename> <new_filename>
+```
+
+* Set/Show git username
+
+```
+$ git config [--global] user.name "<username>"
 ```
 
 ### Branching
@@ -91,7 +97,7 @@ $ git merge [--no-ff] [-X <strategy-option>] <branch_name>
 
 > The -X option specifies merge strategy, including theirs and ours. Use "theirs" when trying to updata the current branch to a newer branch.
 
-> In both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. 
+> In both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git.
 
 
 * Add manually merged files after editing
