@@ -40,6 +40,12 @@ $ git mv <old_filename> <new_filename>
 $ git config [--global] user.name "<username>"
 ```
 
+* Using clang-format on Chromium C++ code
+
+```
+$ git cl format
+```
+
 ### Branching
 
 * Create a new branch and switch to it
