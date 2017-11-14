@@ -68,22 +68,28 @@ $ git branch -d <branch_name>
 
 ### Pushing changes
 
-* Connect repository to a remote server
+* Show all remote repositories
 
 ```
-$ git remote add origin <server>
+$ git remote
+```
+
+* Connect repository to a remote server (Add a new remote repository)
+
+```
+$ git remote add <repo_alias> <repo_url>
 ```
 
 * Push the branch to remote repository
 
 ```
-$ git push origin <branch_name>
+$ git push [<repo_alias> <branch_name>]
 ```
 
 * Remove remote branch
 
 ```
-$ git push origin :<branch_name>
+$ git push <repo_alias> :<branch_name>
 ```
 
 ### Update and merge
