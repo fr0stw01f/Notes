@@ -2,6 +2,14 @@
 
 ## Commands
 
+### Alias
+
+* Use 'git adog' to show pretty branch graphs
+
+```
+git config --global alias.adog "log --all --decorate --oneline --graph"
+```
+
 ### Basics
 
 * Add file to the Index (Stage)
